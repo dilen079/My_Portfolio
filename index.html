@@ -142,15 +142,41 @@
           edge towads the outside. This method may increase the stress on the edge (well within elastic limit), but works much better in terms of fatigue resistance
           and cracking. 
       
-        </p>
-         <!-- Flex container for side-by-side GIFs -->
-  <div class="flex flex-col md:flex-row justify-center items-center gap-6">
-    <video src="Project_2_Videos/Frame_basic.mp4" alt="FEA animation preview" 
-         class="rounded-xl shadow-md max-w-full md:max-w-md">
-    <video src="Project_2_Videos/Mod_1.mp4" alt="FEA animation preview" 
-         class="rounded-xl shadow-md max-w-full md:max-w-md">
-  </div>
-      </section>
+<!-- Flex container for stacked videos -->
+<div class="flex flex-col justify-center items-center gap-10">
+
+  <!-- Video 1 + caption -->
+  <figure class="text-center w-full md:w-2/3">
+    <video 
+      src="Project_2_Videos/Frame_basic.mp4" 
+      class="rounded-xl shadow-md w-full opacity-0 translate-y-6 transition-all duration-700 animate-on-scroll"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+    <figcaption class="mt-3 text-gray-500 dark:text-gray-400 text-sm">
+      Original frame stress behavior
+    </figcaption>
+  </figure>
+
+  <!-- Video 2 + caption -->
+  <figure class="text-center w-full md:w-2/3">
+    <video 
+      src="Project_2_Videos/Mod_1.mp4" 
+      class="rounded-xl shadow-md w-full opacity-0 translate-y-6 transition-all duration-700 animate-on-scroll"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+    <figcaption class="mt-3 text-gray-500 dark:text-gray-400 text-sm">
+      Modified weld enhancement & rounded inner edge
+    </figcaption>
+  </figure>
+
+</div>
+
 
       <!-- Project 3 -->
       <section id="project3" class="min-h-screen scroll-mt-24">
