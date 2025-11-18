@@ -145,28 +145,37 @@
 <!-- Flex container for stacked videos -->
 <div class="flex flex-col justify-center items-center gap-10">
 
+  <!-- Video 1 + caption -->
   <figure class="text-center w-full md:w-2/3">
     <img 
-      src="Project_2_Videos/Frame_basic.gif"
+      src="Project_2_Videos/Frame_Basic.gif" 
       class="rounded-xl shadow-md w-full opacity-0 translate-y-6 transition-all duration-700 animate-on-scroll"
-    >
+      autoplay
+      muted
+      loop
+      playsinline
+    ></img>
     <figcaption class="mt-3 text-gray-500 dark:text-gray-400 text-sm">
       Original frame stress behavior
     </figcaption>
   </figure>
 
+  <!-- Video 2 + caption -->
   <figure class="text-center w-full md:w-2/3">
-    <img 
-      src="Project_2_Videos/Mod_1.gif"
+    <video 
+      src="Project_2_Videos/Mod_1.MP4" 
       class="rounded-xl shadow-md w-full opacity-0 translate-y-6 transition-all duration-700 animate-on-scroll"
-    >
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
     <figcaption class="mt-3 text-gray-500 dark:text-gray-400 text-sm">
       Modified weld enhancement & rounded inner edge
     </figcaption>
   </figure>
 
 </div>
-
 
 
       <!-- Project 3 -->
